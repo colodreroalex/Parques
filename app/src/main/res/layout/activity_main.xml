@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/appimground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginTop="10dp">
+
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/nombreId"
+            android:layout_width="368dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Nombre"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagen">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/descripcionId"
+            android:layout_width="368dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Descripcion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombreId">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/tlfId"
+            android:layout_width="368dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="Telefono"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descripcionId"
+            />
+
+        <EditText
+            android:id="@+id/webId"
+            android:layout_width="368dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Web"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tlfId"
+            />
+
+        <Spinner
+            android:id="@+id/h_apertura"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/horas"
+            android:spinnerMode="dialog"
+            android:contentDescription="Hora de apertura"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/webId"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
