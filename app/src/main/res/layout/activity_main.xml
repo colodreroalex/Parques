@@ -195,7 +195,15 @@
             app:layout_constraintLeft_toLeftOf="@id/caja"
             app:layout_constraintTop_toBottomOf="@id/restaurante" />
 
-
+        <Button
+            android:id="@+id/buttonGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Guardar"
+            app:layout_constraintLeft_toLeftOf="@id/caja"
+            app:layout_constraintRight_toRightOf="@id/caja"
+            app:layout_constraintTop_toBottomOf="@id/mascotas" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
