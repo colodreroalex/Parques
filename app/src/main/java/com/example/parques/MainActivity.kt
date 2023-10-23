@@ -11,7 +11,11 @@ import com.example.parques.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activlayity_main)
+
+
+        //Variable para el dialog
+        var dialogo = MiDialogFragment()
 
 
         //Importamos el LayOut con el binding
@@ -42,11 +46,13 @@ class MainActivity : AppCompatActivity() {
                     "Web: $web \t \nHorario Apertura: $h_apertura \t Horario Cierre: $h_cierre\t\n Deportes: $deportes \tParque Infantil: $infantil \t Restaurante: $restaurante \t Mascotas: $mascotas "
 
 
-            //Hacer un Toast Con el mensaje
-            Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
+            //DIALOG
+            dialogo.show(supportFragmentManager, "Mi dialogo")
 
-            //Adición Al LogCat para control a la hora de depurar
-            Log.d("Mensaje se Guardo", mensaje)
+            //Hacer un Toast Con el mensaje
+            //Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
+
+
         }
 
 
